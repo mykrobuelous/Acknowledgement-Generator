@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import 'tailwindcss';
+@import './shared/styles/utilStyles.css';
+
+@theme {
+    --color-background: #161618;
+    --color-card: #323234;
+    --color-input: #1f1f21;
+    --color-stroke: #52525b;
+    --color-pri-text: #ffffff;
+    --color-sec-text: #a3a2a5;
+    --color-gray-selected: #3f3f4a;
+
+    --color-cus-green: #6ab02f;
+    --color-cus-red: #e83a3a;
+    --color-cus-blue: #3a76d2;
+    --color-cus-yellow: #e4b639;
+    --color-cus-pink: #e69ebe;
+    --color-cus-orange: #ffa500;
+    --color-cus-purple: #a259ff;
+    --color-cus-dark-pink: #e84e92;
+    --color-cus-brown: #724f39;
+
+    --breakpoint-a55: 480px;
+}
+
+@layer base {
+    /* Font Family */
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Custom Scrollbar */
+    /* *::-webkit-scrollbar {
+        display: none;
+    } */
+
+    /* Number Scroll */
+    /* input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type='number'] {
+        appearance: textfield;
+    } */
+
+    /* Eye Color */
+    input::-ms-reveal,
+    input::-webkit-credentials-auto-fill-button {
+        display: none !important;
+    }
+
+    /* Body Titles */
+    body {
+        @apply text-white;
+        font-family: 'Open Sans', sans-serif;
+    }
+}

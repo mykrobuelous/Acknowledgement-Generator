@@ -1,0 +1,107 @@
+import { StyleSheet } from '@react-pdf/renderer';
+
+export const pdfStyles = StyleSheet.create({
+    page: {
+        fontFamily: 'Times-Roman',
+        fontSize: 10,
+        paddingVertical: 40,
+        paddingHorizontal: 50,
+        backgroundColor: '#fff',
+    },
+    // Header
+    headerCenter: { alignItems: 'center', marginBottom: 6 },
+    logo: { width: 80, height: 80, marginBottom: 8 },
+    orgName: {
+        fontFamily: 'Times-Bold',
+        fontSize: 13,
+        textAlign: 'center',
+        letterSpacing: 0.5,
+    },
+    subText: { fontSize: 10, textAlign: 'center', marginTop: 2 },
+    addressText: { fontSize: 9, textAlign: 'center', color: '#444', marginTop: 1 },
+    hr: { borderBottomWidth: 1, borderBottomColor: '#000', marginVertical: 8 },
+    hrThin: { borderBottomWidth: 0.5, borderBottomColor: '#999', marginVertical: 6 },
+    // Receipt title
+    receiptTitle: {
+        fontFamily: 'Times-Bold',
+        fontSize: 12,
+        textAlign: 'center',
+        letterSpacing: 1,
+        marginVertical: 6,
+    },
+    // Receipt No / Date row
+    receiptMeta: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 8,
+    },
+    metaText: { fontFamily: 'Times-Bold', fontSize: 10 },
+    metaValue: { fontFamily: 'Times-Roman', fontSize: 10 },
+    // Table
+    table: { borderWidth: 1, borderColor: '#000' },
+    tableRow: {
+        flexDirection: 'row',
+        borderBottomWidth: 0.5,
+        borderBottomColor: '#999',
+    },
+    tableRowLast: { flexDirection: 'row' },
+    labelCell: {
+        fontFamily: 'Times-Bold',
+        width: '28%',
+        padding: 6,
+        backgroundColor: '#f0f0f0',
+        borderRightWidth: 0.5,
+        borderRightColor: '#999',
+        fontSize: 10,
+    },
+    valueCell: { width: '72%', padding: 6, fontSize: 10 },
+    amountRow: { flexDirection: 'row', justifyContent: 'space-between' },
+    amountCurrency: { fontSize: 10 },
+    amountValue: { fontFamily: 'Times-Bold', fontSize: 10 },
+    checkboxRow: { flexDirection: 'row', alignItems: 'center', marginBottom: 3 },
+    checkbox: {
+        width: 10,
+        height: 10,
+        borderWidth: 1,
+        borderColor: '#000',
+        marginRight: 6,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    checkboxChecked: {
+        width: 10,
+        height: 10,
+        borderWidth: 1,
+        borderColor: '#000',
+        marginRight: 6,
+        backgroundColor: '#222',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    checkmark: { color: '#fff', fontSize: 7, lineHeight: 1 },
+    // Footer
+    footerNote: {
+        fontSize: 9,
+        textAlign: 'center',
+        marginVertical: 10,
+        color: '#333',
+    },
+    signatureSection: { marginTop: 10 },
+    receivedBy: { fontFamily: 'Times-Bold', fontSize: 10, marginBottom: 2 },
+    signerName: { fontFamily: 'Times-Bold', fontSize: 10, marginBottom: 2 },
+    signatureLine: {
+        borderBottomWidth: 1,
+        borderBottomColor: '#000',
+        width: 180,
+        marginVertical: 4,
+    },
+    authorizedText: { fontSize: 9, color: '#555' },
+    quoteText: {
+        fontFamily: 'Times-Italic',
+        fontSize: 9,
+        textAlign: 'center',
+        marginTop: 16,
+        color: '#444',
+    },
+    verseText: { fontSize: 9, textAlign: 'center', color: '#666', marginTop: 2 },
+});
