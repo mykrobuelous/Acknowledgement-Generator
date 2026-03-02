@@ -140,7 +140,7 @@ const PDFform: React.FC<Props> = ({ data }) => {
                     <Image style={pdfStyles.logo} src={SignatureImage} />
                     <Text style={pdfStyles.signerName}>GRACE GLORYMAE C. BEJEC</Text>
                     <View style={pdfStyles.signatureLine} />
-                    <Text style={pdfStyles.authorizedText}>Authorized Representative</Text>
+                    <Text style={pdfStyles.authorizedText}>Finance Monday Head</Text>
                 </View>
 
                 {/* Quote */}
